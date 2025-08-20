@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 text-gray-100 font-serif">
+
+  <header class="flex justify-between items-center px-10 py-6">
+      <h1 class="text-2xl font-light tracking-wide">Abi Akmal Faridho</h1>
+      <nav>
+          <ul class="flex space-x-8 text-sm uppercase tracking-wide">
+              <li><a href="index.html" class="hover:text-gray-500 transition">Home</a></li>
+              <li><a href="about.html" class="hover:text-gray-500 transition">About</a></li>
+              <li><a href="portofolio.html" class="hover:text-gray-500 transition">Portfolio</a></li>
+              <li><a href="kontak.html" class="hover:text-gray-500 transition">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main id="page-container" class="opacity-0 transition-opacity duration-700">
+    <section id="portfolio" class="px-10 md:px-20 py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-950 opacity-0 transition-opacity duration-700">
+
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">My Portfolio</h2>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+          Beberapa proyek yang telah saya kerjakan, mencakup pengembangan website, desain UI/UX, dan konten digital.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div class="relative group overflow-hidden rounded-xl shadow-2xl cursor-pointer">
+          <img src="img/web.jpg" alt="Proyek 1" 
+               class="w-full h-64 object-cover transform transition duration-700 ease-in-out group-hover:scale-105 group-hover:rotate-1 group-hover:translate-y-1">
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <h3 class="text-white text-xl font-semibold mb-2">Website KALINSLAB</h3>
+            <p class="text-gray-300 text-sm">Website pemasaran berbasis PHP & Laravel</p>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-xl shadow-2xl cursor-pointer">
+          <img src="img/ss.png" alt="Proyek 2" 
+               class="w-full h-64 object-cover transform transition duration-700 ease-in-out group-hover:scale-105 group-hover:rotate-1 group-hover:translate-y-1">
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <h3 class="text-white text-xl font-semibold mb-2">Portfolio Web</h3>
+            <p class="text-gray-300 text-sm">Portofolio pribadi menampilkan koleksi proyek</p>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-xl shadow-2xl cursor-pointer">
+          <img src="img/Untitled.png" alt="Proyek 3" 
+               class="w-full h-64 object-cover transform transition duration-700 ease-in-out group-hover:scale-105 group-hover:rotate-1 group-hover:translate-y-1">
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <h3 class="text-white text-xl font-semibold mb-2">Desain UI/UX</h3>
+            <p class="text-gray-300 text-sm">Prototipe menggunakan Figma</p>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-xl shadow-2xl cursor-pointer">
+          <img src="img/beranda.png" alt="Proyek 4" 
+               class="w-full h-64 object-cover transform transition duration-700 ease-in-out group-hover:scale-105 group-hover:rotate-1 group-hover:translate-y-1">
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <h3 class="text-white text-xl font-semibold mb-2">Website KALINSLAB</h3>
+            <p class="text-gray-300 text-sm">Website pemasaran berbasis PHP Native</p>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-xl shadow-2xl cursor-pointer">
+          <img src="img/brosur.jpg" alt="Proyek 5" 
+               class="w-full h-64 object-cover transform transition duration-700 ease-in-out group-hover:scale-105 group-hover:rotate-1 group-hover:translate-y-1">
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <h3 class="text-white text-xl font-semibold mb-2">Brosur KALINSLAB</h3>
+            <p class="text-gray-300 text-sm">Brosur menggunakan Canva</p>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-xl shadow-2xl cursor-pointer group" id="kaos-slider">
+          <img src="img/BIOLOGY/1.jpg" alt="Desain Kaos" 
+               class="w-full h-64 object-cover transform transition duration-700 ease-in-out group-hover:scale-105">
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <h3 class="text-white text-xl font-semibold mb-2">Desain Kaos</h3>
+            <p class="text-gray-300 text-sm">Desain kaos menggunakan Canva</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const page = document.getElementById('page-container');
+    page.classList.remove('opacity-0');
+
+    const section = document.getElementById("portfolio");
+    section.classList.add("opacity-100");
+  });
+
+  const kaosSlider = document.getElementById('kaos-slider');
+  const kaosImages = [
+    "img/BIOLOGY/1.jpg",
+    "img/BIOLOGY/2.jpg",
+    "img/BIOLOGY/3.jpg",
+    "img/BIOLOGY/4.jpg",
+    "img/BIOLOGY/5.jpg"
+  ];
+  let currentKaos = 0;
+  let kaosInterval;
+
+  kaosSlider.addEventListener('mouseenter', () => {
+    kaosInterval = setInterval(() => {
+      currentKaos = (currentKaos + 1) % kaosImages.length;
+      kaosSlider.querySelector('img').src = kaosImages[currentKaos];
+    }, 1000);
+  });
+
+  kaosSlider.addEventListener('mouseleave', () => {
+    clearInterval(kaosInterval);
+    currentKaos = 0;
+    kaosSlider.querySelector('img').src = kaosImages[currentKaos];
+  });
+
+  const links = document.querySelectorAll('a[href$=".html"]');
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = link.getAttribute('href');
+      const page = document.getElementById('page-container');
+
+      page.classList.add('opacity-0');
+
+      const imgs = page.querySelectorAll('img');
+      imgs.forEach(img => {
+        img.classList.add('opacity-0', 'scale-90');
+      });
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 500);
+    });
+  });
+</script>
+</body>
+</html>

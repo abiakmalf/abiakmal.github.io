@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-800 text-gray-100 font-serif">
+
+  <header class="flex justify-between items-center px-10 py-6">
+      <h1 class="text-2xl font-light tracking-wide">Abi Akmal Faridho</h1>
+      <nav>
+          <ul class="flex space-x-8 text-sm uppercase tracking-wide">
+              <li><a href="index.html" class="hover:text-gray-500 transition">Home</a></li>
+              <li><a href="about.html" class="hover:text-gray-500 transition">About</a></li>
+              <li><a href="portofolio.html" class="hover:text-gray-500 transition">Portfolio</a></li>
+              <li><a href="kontak.html" class="hover:text-gray-500 transition">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main id="page-container" class="opacity-0 transition-opacity duration-700">
+
+    <section id="contact" class="px-10 md:px-20 py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-950">
+
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Me</h2>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+          Hubungi saya melalui media sosial atau WhatsApp.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center gap-10">
+
+        <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shadow-2xl border-4 border-gray-700 transform transition hover:scale-105 hover:rotate-2 cursor-pointer">
+          <img src="img/akmal.jpg" 
+               alt="Profil" 
+               id="contact-img"
+               class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex justify-center md:justify-start space-x-6 mt-6 text-2xl">
+            <a href="https://instagram.com/akmalfrdho_" target="_blank" class="text-white hover:text-blue-400 transition">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/62881023468585" target="_blank" class="text-white hover:text-blue-400 transition">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="text-center text-gray-300 mt-6 space-y-1">
+          <p class="font-semibold text-white">Alamat</p>
+          <p>Jatiluhur, Purwakarta, Indonesia</p>
+          <p class="font-semibold text-white mt-2">Email</p>
+          <p><a href="mailto:akmalfaridho03@gmail.com" class="text-blue-400 hover:text-blue-300 transition">akmalfaridho03@gmail.com</a></p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="contact-modal" 
+       class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 cursor-pointer">
+    <img src="img/akmal.jpg" 
+         alt="Foto Profil Besar" 
+         class="w-[30%] max-w-xs md:max-w-md rounded-xl shadow-2xl transition-transform duration-300">
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const page = document.getElementById('page-container');
+      page.classList.remove('opacity-0');
+    });
+
+    const contactImg = document.getElementById("contact-img");
+    const contactModal = document.getElementById("contact-modal");
+
+    contactImg.addEventListener("click", () => {
+      contactModal.classList.remove("hidden");
+    });
+
+    contactModal.addEventListener("click", (e) => {
+      if (e.target === contactModal) {
+        contactModal.classList.add("hidden");
+      }
+    });
+
+    const links = document.querySelectorAll('a[href$=".html"]');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        const page = document.getElementById('page-container');
+
+        page.classList.add('opacity-0');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500);
+      });
+    });
+  </script>
+</body>
+</html>
