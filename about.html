@@ -5,100 +5,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Portofolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-800 text-gray-100 font-serif">
+<div id="navbar"></div>
 
-  <header class="flex justify-between items-center px-10 py-6">
-      <h1 class="text-2xl font-light tracking-wide">Abi Akmal Faridho</h1>
-      <nav>
-          <ul class="flex space-x-8 text-sm uppercase tracking-wide">
-              <li><a href="index.html" class="hover:text-gray-500 transition">Home</a></li>
-              <li><a href="about.html" class="hover:text-gray-500 transition">About</a></li>
-              <li><a href="portofolio.html" class="hover:text-gray-500 transition">Portfolio</a></li>
-              <li><a href="kontak.html" class="hover:text-gray-500 transition">Contact</a></li>
-          </ul>
-      </nav>
-  </header>
+<main id="page-container" class="opacity-0 transition-opacity duration-700">
+  <section id="about" class="relative bg-gradient-to-b from-gray-900 via-gray-800 to-gray-950 px-10 md:px-20 py-20 space-y-24">
 
-  <main id="page-container" class="opacity-0 transition-opacity duration-700">
-    <section id="about" class="relative bg-gradient-to-b from-gray-900 via-gray-800 to-gray-950 px-10 md:px-20 py-20 space-y-24 opacity-0 transition-opacity duration-700">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
+              <img src="img/amik.png" alt="Kampus" class="w-20 h-20 mx-auto object-contain rounded-full">
+              <h3 class="text-xl font-bold text-white">AMIK-YPAT PURWAKARTA</h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                  Saya adalah mahasiswa lulusan AMIK-YPAT PURWAKARTA, jurusan Manajemen Informatika periode 2022-2025. 
+                  Saya memiliki antusiasme tinggi untuk mengembangkan pengetahuan dan keahlian di bidang pemrograman serta teknologi informasi.
+              </p>
+          </div>
 
-        <div class="grid md:grid-cols-4 gap-8 text-center">
-            <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
-                <img src="img/amik.png" alt="Kampus" class="w-20 h-20 mx-auto object-contain rounded-full">
-                <h3 class="text-xl font-bold text-white">AMIK-YPAT PURWAKARTA</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Saya adalah mahasiswa lulusan AMIK-YPAT PURWAKARTA, jurusan Manajemen Informatika periode 2022-2025. Saya memiliki antusiasme tinggi untuk mengembangkan pengetahuan dan keahlian di bidang pemrograman serta teknologi informasi.
-                </p>
-            </div>
+          <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
+              <img src="img/coding.jpg" alt="Belajar Pemrograman" class="w-20 h-20 mx-auto object-contain rounded-full">
+              <h3 class="text-xl font-bold text-white">Belajar Pemrograman</h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                  Saya secara aktif mendalami dunia pemrograman, mulai dari pengembangan web, desain antarmuka pengguna (UI/UX), cloud computing, hingga visualisasi data. 
+                  Selalu terbuka untuk mengeksplorasi teknologi baru dan menerapkan solusi inovatif dalam setiap proyek.
+              </p>
+          </div>
 
-            <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
-                <img src="img/coding.jpg" alt="Belajar Pemrograman" class="w-20 h-20 mx-auto object-contain rounded-full">
-                <h3 class="text-xl font-bold text-white">Belajar Pemrograman</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Saya secara aktif mendalami dunia pemrograman, mulai dari pengembangan web, desain antarmuka pengguna (UI/UX), cloud computing, hingga visualisasi data. Selalu terbuka untuk mengeksplorasi teknologi baru dan menerapkan solusi inovatif dalam setiap proyek yang saya kerjakan.
-                </p>
-            </div>
+          <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
+              <img src="img/pengalaman.jpg" alt="Pengalaman" class="w-20 h-20 mx-auto object-contain rounded-full">
+              <h3 class="text-xl font-bold text-white">Mencari Pengalaman</h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                  Saya berkomitmen untuk selalu mencari pengalaman baru di luar zona nyaman. 
+                  Baik melalui lingkungan kerja profesional maupun proyek pengembangan perangkat lunak, saya terus belajar dan berinovasi.
+              </p>
+          </div>
 
-            <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
-                <img src="img/pengalaman.jpg" alt="Pengalaman" class="w-20 h-20 mx-auto object-contain rounded-full">
-                <h3 class="text-xl font-bold text-white">Mencari Pengalaman</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Saya berkomitmen untuk selalu mencari pengalaman baru di luar zona nyaman. Baik melalui lingkungan kerja profesional maupun proyek pengembangan perangkat lunak, saya terus belajar dan berinovasi demi mencapai potensi terbaik.
-                </p>
-            </div>
+          <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
+              <img src="img/teman.jpg" alt="Mari Berteman" class="w-20 h-20 mx-auto object-contain rounded-full">
+              <h3 class="text-xl font-bold text-white">Mari Berteman</h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                  Saya terbuka untuk bekerja sama, bertukar pengalaman, dan membangun jejaring profesional yang positif.
+              </p>
+          </div>
+      </div>
 
-            <div class="space-y-4 transform transition duration-700 hover:scale-105 hover:rotate-1">
-                <img src="img/teman.jpg" alt="Mari Berteman" class="w-20 h-20 mx-auto object-contain rounded-full">
-                <h3 class="text-xl font-bold text-white">Mari Berteman</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Saya terbuka untuk bekerja sama, bertukar pengalaman, dan membangun jejaring profesional yang positif.
-                </p>
-            </div>
-        </div>
+      <div class="text-center space-y-10 mt-20">
+          <h3 class="text-3xl font-bold text-white">Sertifikat</h3>
+          <div class="flex flex-wrap justify-center gap-8 mt-6">
+              <img src="img/sertifikat.jpg" alt="Sertifikat 1" class="w-64 h-64 object-contain rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-2 cursor-pointer">
+              <img src="img/ukm.jpg" alt="Sertifikat 2" class="w-64 h-64 object-contain rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-2 cursor-pointer">
+              <img src="img/pelatihan.jpg" alt="Sertifikat 3" class="w-64 h-64 object-contain rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-2 cursor-pointer">
+          </div>
+      </div>
+  </section>
+</main>
 
-        <div class="text-center space-y-10 mt-20">
-            <h3 class="text-3xl font-bold text-white">Sertifikat</h3>
-            <p class="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto"></p>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const page = document.getElementById("page-container");
+    const images = document.querySelectorAll("#about img");
+    page.classList.remove("opacity-0");
+    page.classList.add("animate-fadeIn");
 
-            <div class="flex flex-wrap justify-center gap-8 mt-6">
-                <img src="img/sertifikat.jpg" 
-                     alt="Sertifikat 1" 
-                     class="w-64 h-64 object-contain rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-2 cursor-pointer sertifikat">
+    images.forEach((img, i) => {
+      setTimeout(() => {
+        img.classList.add("animate-slideIn");
+      }, i * 150);
+    });
 
-                <img src="img/ukm.jpg" 
-                     alt="Sertifikat 2" 
-                     class="w-64 h-64 object-contain rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-2 cursor-pointer sertifikat">
+    const links = document.querySelectorAll('a[href$=".html"]');
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        const href = link.getAttribute("href");
 
-                <img src="img/pelatihan.jpg" 
-                     alt="Sertifikat 3" 
-                     class="w-64 h-64 object-contain rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-2 cursor-pointer sertifikat">
-            </div>
-        </div>
-    </section>
-  </main>
+        if (href.startsWith("http")) return;
 
-  <script>
-      document.addEventListener("DOMContentLoaded", () => {
-          const page = document.getElementById('page-container');
-          page.classList.remove('opacity-0');
+        e.preventDefault();
 
-          const section = document.getElementById("about");
-          section.classList.add("opacity-100");
+        page.classList.add("animate-fadeOut");
+        images.forEach(img => {
+          img.classList.remove("animate-slideIn");
+          img.classList.add("animate-slideOut");
+        });
+
+        setTimeout(() => {
+          window.location.href = href;
+        }, 600);
+      });
+    });
+  });
+
+  fetch("layout.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const menuIcon = menuBtn.querySelector("i");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+
+        if (!menu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-times");
+        } else {
+          menuIcon.classList.remove("fa-times");
+          menuIcon.classList.add("fa-bars");
+        }
       });
 
-      const links = document.querySelectorAll('a[href$=".html"]');
-      links.forEach(link => {
-          link.addEventListener('click', (e) => {
-              e.preventDefault();
-              const href = link.getAttribute('href');
-              const page = document.getElementById('page-container');
-              page.classList.add('opacity-0');
-              setTimeout(() => {
-                  window.location.href = href;
-              }, 500);
-          });
+      const menuLinks = menu.querySelectorAll("a");
+      menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 768) {
+            menu.classList.add("hidden");
+            menuIcon.classList.remove("fa-times");
+            menuIcon.classList.add("fa-bars");
+          }
+        });
       });
-  </script>
+    });
+</script>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-40px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+@keyframes slideOut {
+  from { opacity: 1; transform: translateX(0) scale(1); }
+  to { opacity: 0; transform: translateX(40px) scale(0.95); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease forwards;
+}
+.animate-fadeOut {
+  animation: fadeOut 0.6s ease forwards;
+}
+.animate-slideIn {
+  animation: slideIn 0.8s ease forwards;
+}
+.animate-slideOut {
+  animation: slideOut 0.6s ease forwards;
+}
+</style>
 </body>
 </html>
